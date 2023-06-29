@@ -23,4 +23,4 @@ export default function Home() {
   )
 }
 
-//Новый Крутой Проект на Next 13.4
+//Новый Крутой Проект на Next 13.4 1h34min
