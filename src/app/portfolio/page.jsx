@@ -9,10 +9,10 @@ const Potrfolio = () => {
 				<Link href='portfolio/illustrations' className={styles.item}>
 				<span className={styles.title}>Illustrations</span>
 				</Link>
-				<Link href='portfolio/Websites' className={styles.item}>
+				<Link href='portfolio/websites' className={styles.item}>
 				<span className={styles.title}>Websites</span>
 				</Link>
-				<Link href='portfolio/Application' className={styles.item}>
+				<Link href='portfolio/applications' className={styles.item}>
 				<span className={styles.title}>Application</span>
 				</Link>
 			</div>
