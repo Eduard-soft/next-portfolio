@@ -3,9 +3,12 @@
 import useSWR from 'swr'
 import { useState, useEffect } from 'react'
 import styles from './page.module.css'
+import { useSession } from 'next-auth/react'
 
 
 const Dashboard = () => {
+	const session = useSession()
+	console.log(session);
 	// const [data, setData] = useState([])
 	// const [error, setError] = useState(false)
 	// const [isLoading, setIsLoading] = useState(true)
@@ -30,7 +33,7 @@ const Dashboard = () => {
 	const fetcher = (...args) => fetch(...args).then(res => res.json())
 	const { data, error, isLoading } = useSWR('https://jsonplaceholder.typicode.com/posts', fetcher)
 
-	console.log(data)
+	//console.log(data)
 	
 	return <div className={styles.dashboard}>Dashboard</div>
 }
